@@ -1,0 +1,488 @@
+<link rel="stylesheet" href="/contact.css">
+<link rel="stylesheet" href="/styles.css">
+<header class="text-black-600 body-font font-semibold bg-purple-500 h-30 fixed w-full z-10">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+       
+        <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-black p-2 bg-violet-600 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">PriceHunt</span>
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
+
+            <a class="mr-6 hover:text-violet-900" href="#home">Home</a>
+            <a class="mr-6 hover:text-violet-900" href="#contact_page">Contact Us</a>
+
+            <a class="mr-6 hover:text-violet-900" onclick="window.location.href='/about'">About</a>
+
+
+
+        </nav>
+         <!-- Searchbar -->
+         <form action="/products" method="POST" class="flex ml-2">
+          <!-- <input type="text" name="search" placeholder="Search..." class="rounded-md px-3 py-2 border-none bg-white text-gray-800" /> -->
+          <div class="relative ml-8 md:ml-0">
+            <input
+                type="text"
+                name="search"
+                placeholder="Search"
+                class="bg-gray-200 text-black px-10 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                
+            />
+            <button
+                class="absolute inset-y-0 right-0 px-3 py-2 bg-purple-600 hover:bg-purple-600 rounded-r-lg">
+                <svg
+                class="h-6 w-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 15l4.57 4.57M4 12a8 8 0 018-8h.001M8 21a8 8 0 100-16 8 8 0 000 16z"
+                />
+                </svg>
+            </button>
+        </div>
+          <select
+            class="rounded-md px-3 py-2 border-none bg-white text-gray-800 ml-2" name="category"
+          >
+            <option value="electronics">Electronic</option>
+            <option value="fashion">Fashion</option>
+          </select>
+          <!-- <button type="submit" class="bg-purple-600 text-white px-3 py-1 rounded-md hover:bg-purple-700 ml-2">Search</button> -->
+      </form>
+      <% if (flag) { %>
+        <button class="inline-flex items-center bg-white border-0 py-2 px-4 focus:outline-none hover:bg-violet-600 rounded text-base mt-8 md:mt-0 ml-6 mr-0" onclick="window.location.href='/users/login'">Login</button>
+      <% } %>
+      </div>
+</header>    
+
+<section class="text-black body-font bg-violet-200">
+    <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-violet-900">Welcome to the PriceHunt!
+          <br class="hidden lg:inline-block">Start Shopping Now....
+        </h1>
+
+        <p class="mb-8 leading-relaxed"><b>Experience the thrill of saving like never before!</b><br> With our platform, comparing prices across multiple e-commerce platforms is a breeze. Dive into a world of convenience and discover the joy of hassle-free shopping.</p>
+        <div class="flex justify-center">
+          <% if (flag) { %>
+            <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg" onclick="window.location.href='/users/login'">Login</button>
+            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" onclick="window.location.href='/users/register'">Register</button>
+        <% } %>
+        
+
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="HomeImage.png">
+      </div>
+    </div>
+  </section>
+
+
+  <button id="chatbot"><a href="/chat">Chat</a></button>
+
+
+<div style="background-image: url(); background-size: cover">
+    <section class="text-black body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2
+            class="text-s text-violet-600 tracking-widest font-medium title-font mb-1"
+          >
+            PRICE COMPARATOR WEBSITE
+          </h2>
+          <h1 class="sm:text-3xl text-3xl font-medium title-font text-black">
+            Our Features
+          </h1>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/4">
+            <div class="flex rounded-lg h-full bg-violet-200 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-violet-600 text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-black text-lg title-font font-medium">
+                  Data Aggregation
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Gathers and compares prices from multiple sources.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4">
+            <div class="flex rounded-lg h-full bg-violet-200 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-violet-600 text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h2 class="text-black text-lg title-font font-medium">
+                  Pricing Analysis
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Evaluates pricing data to provide meaningful insights and
+                  comparisons.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4">
+            <div class="flex rounded-lg h-full bg-violet-200 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-violet-600 text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-black text-lg title-font font-medium">
+                  Product Categorization
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Organizes items into relevant categories for easy browsing
+                  and classification.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4">
+            <div class="flex rounded-lg h-full bg-violet-200 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-violet-600 text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path
+                      d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-black text-lg title-font font-medium">
+                  Price Notifications
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Sends timely alerts to users regarding price changes or
+                  relevant updates
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- Know About Us -->
+  <section class="text-gray-200 body-font bg-violet-300">
+    <div class="container px-5 py-24 mx-auto">
+      <div
+        class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
+      >
+        <h1
+          class="flex-grow sm:pr-20 text-2xl title-font text-black font-semibold"
+        >
+          Discover the next level of shopping satisfaction.
+          <br class="hidden lg:inline-block" />
+          Join us & experience the difference with PriceHunt.
+        </h1>
+        <button
+          class="flex-shrink-0 text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg mt-10 sm:mt-0" onclick="window.location.href='/users/register'"
+        >
+          Join Us
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div id="contact_page">
+    <div class="contact_container">
+        <div class="left_contact">
+            <div class="text_container">
+                <h1>Contact us</h1>
+                <p>Need to get in touch with us? Either fill out the form with your inquiry or find the
+                    department
+                    email you'd like to contact below.</p>
+            </div>
+        </div>
+        <div class="right_contact">
+
+            <div class="contact-form">
+                
+                    <div>
+                        <input type="hidden" name="access_key" value="384373e7-6728-4d7d-b028-47ce48c3d1b4">
+                        <input type="text" class="form-control" id="from_name" name="from_name" placeholder="Name">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                    <input type="email" class="form-control" id="email_id" name="email_id" placeholder="E-mail"> 
+                    <textarea rows="5" name="message" id="message" placeholder="What can we help you with?" class="form-control"></textarea>
+                    <button onclick="sendMail()" class="send-btn">Send Message</button>
+                
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- <script src="index.js"></script> -->
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+
+(function(){
+   emailjs.init({
+     publicKey: "tJWe7s0w35Se54Eg5",
+   });
+})();
+</script>
+<script>
+function sendMail() {
+  console.log("sendMail function called"); // Check if function is being called
+  var params = {
+      from_name: document.getElementById("from_name").value,
+      email_id: document.getElementById("email_id").value,
+      message: document.getElementById("message").value,
+      phone: document.getElementById("phone").value,
+  };
+  console.log("Params:", params); // Check the params being passed to emailjs.send()
+  
+  emailjs.send("service_jx6sxvk","template_yii9pwd",params)
+      .then(function(res) {
+          alert("Success! " + res.status);
+          console.log("Email sent successfully:", res);
+      })
+      .catch(function(err) {
+          alert("Error: " + err);
+          console.error("Error sending email:", err);
+      });
+}
+</script>
+
+
+    <!-- Footer -->
+
+<footer class="text-gray-800 body-font bg-violet-400 mt-8">
+   
+
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        class="w-10 h-10 txt-white p-2 bg-violet-500 rounded-full"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+        ></path>
+      </svg>
+        <span class="ml-3 text-xl text-black">PriceHunt</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-800">
+        Discover the next level of shopping satisfaction!!!
+      </p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Electronics</h2>
+        <nav class="list-none mb-10">
+          <li><a href="#" class="text-black hover:text-violet-800">Smartphones</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Laptops</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Tablets</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Headphones</a></li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Fashion</h2>
+        <nav class="list-none mb-10">
+          <li><a href="#" class="text-black hover:text-gray-800">Men's Clothing</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Women's Clothing</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Shoes</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Accessories</a></li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Home & Kitchen</h2>
+        <nav class="list-none mb-10">
+          <li><a href="#" class="text-black hover:text-gray-800">Furniture</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Appliances</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Cookware</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Home Decor</a></li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Sports & Outdoors</h2>
+        <nav class="list-none mb-10">
+          <li><a href="#" class="text-black hover:text-gray-800">Exercise & Fitness</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Camping & Hiking</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Outdoor Recreation</a></li>
+          <li><a href="#" class="text-black hover:text-gray-800">Sports Equipment</a></li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+
+ 
+  <div class="bg-violet-700">
+    <div
+      class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+
+    >
+      <p class="text-black text-sm text-center sm:text-left">
+        © 2024 PriceHunt —
+        <a
+          href="mailto:pricehunt.pbl@gmail.com"
+          rel="noopener noreferrer"
+          class="text-black ml-1"
+          target="_blank"
+          >pricehunt.pbl@gmail.com</a>
+      </p>
+      <span
+        class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+      >
+        <a class="text-black" href="#">
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+            ></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-black" href="#">
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+            ></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-black" href="#">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path
+              d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+            ></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-black" href="#">
+          <svg
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+            ></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+
+        <a class="ml-3 text-black" href="#">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.167 6.839 9.49.5.092.682-.218.682-.48 0-.237-.008-.866-.013-1.7-2.782.604-3.37-1.34-3.37-1.34-.454-1.15-1.11-1.456-1.11-1.456-.908-.62.07-.607.07-.607 1.003.07 1.532 1.03 1.532 1.03.893 1.53 2.345 1.087 2.918.83.09-.645.35-1.087.636-1.338-2.225-.253-4.566-1.112-4.566-4.945 0-1.092.39-1.986 1.032-2.68-.104-.252-.448-1.268.098-2.64 0 0 .837-.268 2.74 1.02.794-.22 1.64-.33 2.485-.334.847.004 1.692.114 2.485.334 1.903-1.288 2.738-1.02 2.738-1.02.55 1.372.206 2.388.102 2.64.642.694 1.03 1.588 1.03 2.68 0 3.84-2.344 4.688-4.576 4.937.36.31.678.922.678 1.858 0 1.344-.012 2.425-.012 2.755 0 .267.18.577.688.478C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+
+</footer>
+
+<script src="https://cdn.tailwindcss.com"></script>

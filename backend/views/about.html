@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - PriceHunt</title>
+  <link rel="stylesheet" href="/contact.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" class="sty">
+  <!-- Include any other CSS files if needed -->
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="text-black-600 body-font font-semibold bg-purple-500 h-30 ">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+     
+      <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-black p-2 bg-violet-600 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">PriceHunt</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
+
+          <a class="mr-6 hover:text-violet-900" href="#home">Home</a>
+          <a class="mr-6 hover:text-violet-900" href="#contact_page">Contact Us</a>
+          <a class="mr-6 hover:text-violet-900" href="about.html">About</a>
+
+      </nav>
+       <!-- Searchbar -->
+       <form action="/products" method="POST" class="flex ml-2">
+        <!-- <input type="text" name="search" placeholder="Search..." class="rounded-md px-3 py-2 border-none bg-white text-gray-800" /> -->
+        <div class="relative ml-8 md:ml-0">
+          <input
+              type="text"
+              name="search"
+              placeholder="Search"
+              class="bg-gray-200 text-black px-10 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+              
+          />
+          <button
+              class="absolute inset-y-0 right-0 px-3 py-2 bg-purple-600 hover:bg-purple-600 rounded-r-lg">
+              <svg
+              class="h-6 w-6 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 15l4.57 4.57M4 12a8 8 0 018-8h.001M8 21a8 8 0 100-16 8 8 0 000 16z"
+              />
+              </svg>
+          </button>
+      </div>
+        <select
+          class="rounded-md px-3 py-2 border-none bg-white text-gray-800 ml-2" name="category"
+        >
+          <option value="electronics">Electronic</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <!-- <button type="submit" class="bg-purple-600 text-white px-3 py-1 rounded-md hover:bg-purple-700 ml-2">Search</button> -->
+    </form>
+
+      <button class="inline-flex items-center bg-white border-0 py-2 px-4 focus:outline-none hover:bg-violet-600 rounded text-base mt-8 md:mt-0 ml-6 mr-0" onclick="window.location.href='/users/login'">Login</button>
+  </div>
+</header>  
+
+
+<!-- Main Content Section -->
+<section class="text-black body-font bg-purple-100">
+
+  <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-purple-900 text-center py-10 ">About Us</h2>
+
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <!-- Vision and Mission Section -->
+    <div class="lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h4 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-purple-900">Our Vision</h4>
+      <p class="mb-8 leading-relaxed">To become the leading platform for price comparison and shopping convenience, empowering consumers to make informed purchasing decisions effortlessly.</p>
+      <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-purple-900">Our Mission</h2>
+      <p class="mb-8 leading-relaxed">To simplify the shopping experience by aggregating pricing data, providing comprehensive comparisons, and offering personalized recommendations, thereby enhancing customer satisfaction and loyalty.</p>
+    </div>
+    <!-- Image Section -->
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" src="https://img.freepik.com/premium-vector/mobile-shopping-concept-with-people-buy-things-online-store-via-smartphone_138260-1287.jpg" alt="Team Image">
+    </div>
+  </div>
+  
+  <!-- Team Section -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 text-purple-900">Introducing Our Team</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Meet the dedicated individuals behind PriceHunt, working tirelessly to provide you with the best shopping experience.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <!-- Team Members -->
+        <div class="p-4 lg:w-1/5 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Prajwal Padole</h2>
+              <h3 class="text-gray-500 mb-3">Backend Developer</h3>
+              <p class="mb-4">Passionate about creating intuitive user interfaces to enhance your shopping experience.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 lg:w-1/5 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Prateek Patil</h2>
+              <h3 class="text-gray-500 mb-3">Backend Developer</h3>
+              <p class="mb-4">Bringing the magic of backend technologies to ensure a seamless shopping journey for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 lg:w-1/5 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Smeet Nahar</h2>
+              <h3 class="text-gray-500 mb-3">Backend Developer</h3>
+              <p class="mb-4">Crafting innovative marketing strategies to connect you with the best deals and offers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 lg:w-1/5 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Riya Patil</h2>
+              <h3 class="text-gray-500 mb-3">UI Developer</h3>
+              <p class="mb-4">Dedicated to providing you with timely assistance and resolving all your queries.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 lg:w-1/5 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Sakshi Marbhal</h2>
+              <h3 class="text-gray-500 mb-3">Frontend Developer</h3>
+              <p class="mb-4">Ensuring that every aspect of your shopping journey meets the highest standards of quality.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="text-gray-800 body-font bg-purple-400 mt-8">
+  <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+    <p class="text-black text-sm text-center sm:text-left">
+      &copy; 2024 PriceHunt —
+      <a href="mailto:pricehunt.pbl@gmail.com" rel="noopener noreferrer" class="text-black ml-1" target="_blank">pricehunt.pbl@gmail.com</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+      <!-- Social media icons can be added here if needed -->
+    </span>
+  </div>
+</footer>
+
+<!-- JavaScript code can be included if needed -->
+
+</body>
+</html>
